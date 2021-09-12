@@ -1,6 +1,5 @@
 # oscp-notes
 
-I Passed the OSCP in January 2021. These are the notes I took along my journey to achieving it. 
 
 ## Table of Contents
 - [Enumeration](#Enumeration)
@@ -256,7 +255,9 @@ Enumeration
 <br>
 
 `TCP 3389: RDP`
-
+-    Enable RDP (xp)
+     `reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Contr ol\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 0 /f`
+     
 -    Log In  
      `rdesktop -u <user> -p <password> <RHOST>`
 <br>
